@@ -26,8 +26,6 @@ jobs:
           npm --version
           npm config
           npm i -g corepack
-          set NODE_TLS_REJECT_UNAUTHORIZED=0
-          npm config set strict-ssl false
           npm config set registry http://registry.npmjs.org/
           npm config -g delete ca
           npm i -g corepack
@@ -36,8 +34,7 @@ jobs:
           npm install -g typescript
           npm i -g corepack
           npm install --legacy-peer-deps
-          set NODE_TLS_REJECT_UNAUTHORIZED=0
-          npm config set strict-ssl false
+          
           npm config set registry http://registry.npmjs.org/
           npm config -g delete ca
           npm install -g node-gyp
