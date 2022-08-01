@@ -28,11 +28,6 @@ jobs:
           npm config set strict-ssl false 2>&1 log.log || true
           npm config set registry http://registry.npmjs.org/ 2>&1 log.log || true
           npm config -g delete ca 2>&1 log.log || true
-          ECHO.
-          ECHO.
-          ECHO #############  JTKC  #############
-          ECHO.
-          ECHO.
           yarn config
           npm install --legacy-peer-deps
           npm install
