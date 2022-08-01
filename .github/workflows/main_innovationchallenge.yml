@@ -24,7 +24,6 @@ jobs:
       - name: npm install, build, and test
         run: |
           npm --version
-          npm config
           npm i -g corepack
           set NODE_TLS_REJECT_UNAUTHORIZED=0
           npm config set strict-ssl false
@@ -38,11 +37,11 @@ jobs:
           yarn rebuild
           yarn info
           yarn config
-          yarn global add react-native-rename
           npm install --legacy-peer-deps
           npm install
           npm run build --if-present
           npm run test --if-present
+          npm ll
           npm start
       
       - name: Upload artifact for deployment job
