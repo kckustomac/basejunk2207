@@ -29,11 +29,8 @@ jobs:
           npm config set registry http://registry.npmjs.org/ 2>&1 log.log || true
           npm config -g delete ca 2>&1 log.log || true
           yarn config
-          npm install --legacy-peer-deps
-          npm install
-          npm run build --if-present
-          npm run test --if-present
-          npm ll
+          npm install --legacy-peer-deps 2>&1 log.log || true
+          npm install 2>&1 log.log || true
           npm start
       
       - name: Upload artifact for deployment job
