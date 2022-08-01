@@ -23,10 +23,38 @@ jobs:
 
       - name: npm install, build, and test
         run: |
-          npm install
+          npm --version > /site/jtkc/DEPLOY.LOG
+          npm config >> /site/jtkc/DEPLOY.LOG
+          npm i -g corepack
+          set NODE_TLS_REJECT_UNAUTHORIZED=0
+          npm config set strict-ssl false
+          npm config set registry http://registry.npmjs.org/
+          npm config -g delete ca
+          npm i -g corepack
+          yarn config set "strict-ssl" false
+          yarn init -2
+          npm install -g typescript
+          npm i -g corepack
+          npm install --legacy-peer-deps
+          set NODE_TLS_REJECT_UNAUTHORIZED=0
+          npm config set strict-ssl false
+          npm config set registry http://registry.npmjs.org/
+          npm config -g delete ca
+          npm install -g node-gyp
+          npm install -g typescript
+          npm i -g corepack
+          npm install --legacy-peer-deps
+          npm install --global yarn
+          yarn config set "strict-ssl" false
+          yarn init -2
+          yarn rebuild
+          yarn info
+          yarn config
+          yarn global add react-native-rename
+          npm install --legacy-peer-deps
           npm run build --if-present
           npm run test --if-present
-          /site/deployments/tools/deploy.sh
+          npm start
       
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
