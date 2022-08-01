@@ -23,12 +23,16 @@ jobs:
 
       - name: npm install, build, and test
         run: |
-          npm --version
-          set NODE_TLS_REJECT_UNAUTHORIZED=0
-          npm config set strict-ssl false
-          npm config set registry http://registry.npmjs.org/
-          npm config -g delete ca
-          npm install -g node-gyp
+          npm --version > /dev/null 2>&1 || true
+          set NODE_TLS_REJECT_UNAUTHORIZED=0 > /dev/null 2>&1 || true
+          npm config set strict-ssl false > /dev/null 2>&1 || true
+          npm config set registry http://registry.npmjs.org/ > /dev/null 2>&1 || true
+          npm config -g delete ca > /dev/null 2>&1 || true
+          ECHO.
+          ECHO.
+          ECHO #############  JTKC  #############
+          ECHO.
+          ECHO.
           yarn config
           npm install --legacy-peer-deps
           npm install
