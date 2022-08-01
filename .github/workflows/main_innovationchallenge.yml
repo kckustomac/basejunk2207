@@ -69,4 +69,4 @@ jobs:
           app-name: 'innovationchallenge'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_DB5D89E9E7F745FFA0AAAA7A49B0BFB3 }}
-          package: .
+          package: basejunk2207
