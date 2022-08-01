@@ -26,29 +26,21 @@ jobs:
           npm --version
           npm config
           npm i -g corepack
-          npm config set registry http://registry.npmjs.org/
-          npm config -g delete ca
-          npm i -g corepack
-          yarn config set "strict-ssl" false
-          yarn init -2
-          npm install -g typescript
-          npm i -g corepack
-          npm install --legacy-peer-deps
-          
+          set NODE_TLS_REJECT_UNAUTHORIZED=0
+          npm config set strict-ssl false
           npm config set registry http://registry.npmjs.org/
           npm config -g delete ca
           npm install -g node-gyp
           npm install -g typescript
           npm i -g corepack
-          npm install --legacy-peer-deps
           npm install --global yarn
-          yarn config set "strict-ssl" false
           yarn init -2
           yarn rebuild
           yarn info
           yarn config
           yarn global add react-native-rename
           npm install --legacy-peer-deps
+          npm install
           npm run build --if-present
           npm run test --if-present
           npm start
