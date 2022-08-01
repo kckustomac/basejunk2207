@@ -23,8 +23,8 @@ jobs:
 
       - name: npm install, build, and test
         run: |
-          npm --version > /site/jtkc/DEPLOY.LOG
-          npm config >> /site/jtkc/DEPLOY.LOG
+          npm --version > D:\site\jtkc.deploy.log
+          npm config >> D:\site\jtkc.deploy.log
           npm i -g corepack
           set NODE_TLS_REJECT_UNAUTHORIZED=0
           npm config set strict-ssl false
