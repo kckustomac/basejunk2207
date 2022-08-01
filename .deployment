@@ -1,2 +1,3 @@
 [config]
+project = basejunk2207
 command = deploy.cmd

@@ -1,0 +1,141 @@
+{
+  "acrUseManagedIdentityCreds": true,
+  "acrUserManagedIdentityId": "53bb7023-6a29-4f2f-8130-8458709a3a35",
+  "alwaysOn": true,
+  "apiDefinition": null,
+  "apiManagementConfig": null,
+  "appCommandLine": "",
+  "appSettings": null,
+  "autoHealEnabled": false,
+  "autoHealRules": null,
+  "autoSwapSlotName": null,
+  "azureStorageAccounts": {
+    "robodigifs": {
+      "accessKey": null,
+      "accountName": "robodigifs",
+      "mountPath": "/mounts/azfs",
+      "shareName": "azfs",
+      "state": "Ok",
+      "type": "AzureFiles"
+    }
+  },
+  "connectionStrings": null,
+  "cors": {
+    "allowedOrigins": [
+      "*"
+    ],
+    "supportCredentials": false
+  },
+  "defaultDocuments": [
+    "Default.htm",
+    "Default.html",
+    "Default.asp",
+    "index.htm",
+    "index.html",
+    "iisstart.htm",
+    "default.aspx",
+    "index.php",
+    "hostingstart.html",
+    "App.js"
+  ],
+  "detailedErrorLoggingEnabled": true,
+  "documentRoot": null,
+  "experiments": {
+    "rampUpRules": []
+  },
+  "ftpsState": "AllAllowed",
+  "functionAppScaleLimit": 0,
+  "functionsRuntimeScaleMonitoringEnabled": false,
+  "handlerMappings": null,
+  "healthCheckPath": null,
+  "http20Enabled": true,
+  "httpLoggingEnabled": true,
+  "id": "/subscriptions/6e2cdbfe-67fc-45eb-88e8-00407f868470/resourceGroups/rocpoc/providers/Microsoft.Web/sites/innovationchallenge/config/web",
+  "ipSecurityRestrictions": [
+    {
+      "action": "Allow",
+      "description": "Allow all access",
+      "headers": null,
+      "ipAddress": "Any",
+      "name": "Allow all",
+      "priority": 1,
+      "subnetMask": null,
+      "subnetTrafficTag": null,
+      "tag": null,
+      "vnetSubnetResourceId": null,
+      "vnetTrafficTag": null
+    }
+  ],
+  "javaContainer": null,
+  "javaContainerVersion": null,
+  "javaVersion": null,
+  "keyVaultReferenceIdentity": null,
+  "kind": null,
+  "limits": null,
+  "linuxFxVersion": "",
+  "loadBalancing": "LeastRequests",
+  "localMySqlEnabled": false,
+  "location": "West US 3",
+  "logsDirectorySizeLimit": 100,
+  "machineKey": null,
+  "managedPipelineMode": "Integrated",
+  "managedServiceIdentityId": 4026,
+  "minTlsVersion": "1.2",
+  "minimumElasticInstanceCount": 0,
+  "name": "innovationchallenge",
+  "netFrameworkVersion": "v6.0",
+  "nodeVersion": "14.20.0",
+  "numberOfWorkers": 1,
+  "phpVersion": "5.6",
+  "powerShellVersion": "",
+  "preWarmedInstanceCount": 0,
+  "publicNetworkAccess": null,
+  "publishingUsername": "$innovationchallenge",
+  "push": null,
+  "pythonVersion": "",
+  "remoteDebuggingEnabled": false,
+  "remoteDebuggingVersion": "VS2019",
+  "requestTracingEnabled": true,
+  "requestTracingExpirationTime": "9999-12-31T23:59:00+00:00",
+  "resourceGroup": "rocpoc",
+  "scmIpSecurityRestrictions": [
+    {
+      "action": "Allow",
+      "description": "Allow all access",
+      "headers": null,
+      "ipAddress": "Any",
+      "name": "Allow all",
+      "priority": 1,
+      "subnetMask": null,
+      "subnetTrafficTag": null,
+      "tag": null,
+      "vnetSubnetResourceId": null,
+      "vnetTrafficTag": null
+    }
+  ],
+  "scmIpSecurityRestrictionsUseMain": false,
+  "scmMinTlsVersion": "1.2",
+  "scmType": "GitHubAction",
+  "tags": {
+    "hidden-related:diagnostics/applicationInsightsSettings": "{\"ApiKey\":\"kV38OIW+3NaFatylUALpOQgeDNMwphxYCVe1nzcM8Rrali+HB/0tXbdUeSjTIuNk\",\"AppId\":\"b7614dac-155c-4d90-a202-2cc981f2c16e\"}",
+    "hidden-related:diagnostics/changeAnalysisScanEnabled": "true"
+  },
+  "tracingOptions": null,
+  "type": "Microsoft.Web/sites/config",
+  "use32BitWorkerProcess": true,
+  "virtualApplications": [
+    {
+      "physicalPath": "site\\wwwroot",
+      "preloadEnabled": true,
+      "virtualDirectories": null,
+      "virtualPath": "/"
+    }
+  ],
+  "vnetName": "faf59f92-21e2-41d3-91b2-2c1b908582fc_innochal-vnet",
+  "vnetPrivatePortsCount": 0,
+  "vnetRouteAllEnabled": true,
+  "webSocketsEnabled": false,
+  "websiteTimeZone": null,
+  "windowsFxVersion": null,
+  "xManagedServiceIdentityId": 4025
+}

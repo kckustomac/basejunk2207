@@ -9,6 +9,12 @@ on:
       - main
   workflow_dispatch:
 
+
+env:
+  AZURE_WEBAPP_NAME: basejunk2207
+  AZURE_WEBAPP_PACKAGE_PATH: 'basejunk2207'
+  NODE_VERSION: '14.20.00'
+
 jobs:
   build:
     runs-on: windows-latest
@@ -53,6 +59,8 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: node-app
+          run: |
+               echo '{ script: "serve", env: { PM2_SERVE_SPA: "true", PM2_SERVE_HOMEPAGE: "/index.html" } }' >> basejunk2207/process.json
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v2
